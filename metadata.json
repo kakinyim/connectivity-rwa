@@ -1,0 +1,70 @@
+{
+  "title": {
+    "en": "Rwanda — Connectivity and Population",
+    "fr": "Rwanda — Connectivité et population"
+  },
+  "iso3": "RWA",
+  "country": "Rwanda",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "reference_period": "2026Q2",
+  "quarters_processed": [
+    "2026Q2",
+    "2026Q1",
+    "2025Q4",
+    "2025Q3"
+  ],
+  "services": [
+    "fixed",
+    "mobile"
+  ],
+  "admin_level": "ADM2",
+  "generated": "2026-09-30T13:38:25",
+  "sources": {
+    "ookla": {
+      "name": "Ookla Speedtest Open Data",
+      "licence": "CC BY-NC-SA 4.0",
+      "url": "https://github.com/teamookla/ookla-open-data",
+      "resolution": "Web Mercator z16 (~611 m at the equator)"
+    },
+    "worldpop": {
+      "name": "WorldPop 2025 1km",
+      "product": "Global 2 R2025A",
+      "release": "R2025A",
+      "is_projection": true,
+      "licence": "CC BY 4.0",
+      "url": "https://www.worldpop.org"
+    },
+    "geoboundaries": {
+      "name": "geoBoundaries gbOpen",
+      "licence": "CC BY 4.0",
+      "url": "https://www.geoboundaries.org"
+    }
+  },
+  "methods": {
+    "weighting": "population-weighted median; cell population shared equally among the tiles whose centroid falls in the cell",
+    "coverage": "share of population in 1 km cells containing >= 1 measured tile",
+    "thresholds_mbps": {
+      "broadband": 10,
+      "high_quality": 25
+    },
+    "settlement_density_thresholds": {
+      "urban": 1500,
+      "periurban": 300
+    }
+  },
+  "headline": {
+    "d_median_pop": 25.206993689558963,
+    "d_median_tile": 23.778,
+    "pct_above_bb": 79.81707067780455,
+    "pct_above_hi": 50.56722756720532,
+    "pop_coverage_pct": 12.58878053054944,
+    "area_coverage_pct": 1.4731640090690252,
+    "lat_median_pop": 20.0
+  },
+  "population_total": 14312417.341254536,
+  "connectivity_gini": 0.5196822112941039,
+  "licence_of_this_product": "CC BY-NC-SA 4.0 (inherited from Ookla, share-alike)"
+}
